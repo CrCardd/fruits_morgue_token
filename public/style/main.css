@@ -1,0 +1,10 @@
+#main {
+    background-color: var(--p2_color_1);
+    min-height: 85vh;
+}
+
+main header {
+    color: var(--p2_color_2);
+    height: 15vh;
+    /* background-color: aqua; */
+}

@@ -1,0 +1,25 @@
+.footer_button {
+    width: 43%;
+    height: 5vh;
+    font-size: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input_name {
+    border-radius: 30px;
+}
+
+.input_name:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+
+.input_name::placeholder {
+    font-size: 4vh;
+    opacity: 0.4;
+    color: var(--color_5);
+}
