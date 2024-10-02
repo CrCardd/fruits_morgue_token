@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
-
-
     background-color: rgb(32, 30, 30);
+    display: flex;
 }
 
 body::before {
@@ -13,41 +15,127 @@ body::before {
     height: 100%;
     opacity: 0.5    ;
 
-    background: url('/img/backgrounds/idea02.png');
+    background: url('/img/backgrounds/pfv.png');
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-size: 100%;
     z-index: -1;
 }
 
 .orders-list {
     display: flex;
     justify-content: space-evenly;  
-    align-items: center;
     flex-wrap: wrap;
 
+    padding: 100px;
+
     width: 100%;
-    height: 90vh;
+    height: 70vh;
 }
 
 .order {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    background-color: azure;
+    gap:10px;
+    background-color: rgba(0, 0, 0, 0.199);
 
-    padding: 20px;
-    width: 420px;
-    height: 420px;
+    width: 350px;
+    height: 490px;
     margin-top: 100px;
 
     border-radius: 30px;
+
 }
 
 .product-image {
-    height: 380px;
-    width: 380px;
+    height: auto;
+    width: 100%;
     
-    border-radius: 30px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.title {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 6rem;
+    color: rgb(175, 33, 128);
+}
+
+.slogan {
+    width: 100%;
+    margin-top: 40px;
+
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+
+    color: aliceblue;
+}
+
+.action_button {
+    background-color: transparent;
+    border: none;
+}
+
+.action_img {
+    width: 55%;
+    height: auto;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color:aliceblue;
+
+    font-size: 40px;
+}
+
+.quantity {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.finish_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 140px;
+}
+
+.finish {
+    background-color: rgba(173, 49, 126, 0.63);
+    border: none;
+    border-radius: 100px;
+
+    width: 50%;
+    height: 150px;
+
+    font-size: 60px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(190, 190, 190);
 }

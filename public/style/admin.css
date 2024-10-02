@@ -1,0 +1,83 @@
+html {
+}
+
+body {
+    background-color: rgb(34, 5, 5);
+}
+
+.orders-list {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+}
+
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 800px;
+    padding: 50px;
+
+    border-radius: 30px;
+
+    background-color: rgb(155, 130, 130);
+    font-size: 30px;
+}
+
+.informations {
+    font-size: 30px;
+}
+
+header {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.add {
+    text-decoration: none;
+    background-color: rgb(199, 47, 141);
+    border: 20px solid rgb(199, 47, 141);
+    border-radius: 20px;
+
+    font-size: 30px;
+    color: aliceblue;
+    width: 400px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.select {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    color: rgba(255, 39, 140, 0.377);
+    font-size: 50px;
+}
+
+.select_button {
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.change_state {
+    width: 120px;
+    height: auto;
+}
+
+.button_state {
+    background-color: transparent;
+    border: none;
+}

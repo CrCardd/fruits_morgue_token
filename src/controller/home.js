@@ -1,3 +1,5 @@
+const Product = require('../model/product')
+
 module.exports = {
 
     async init(req, res){

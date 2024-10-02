@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADM</title>
+
+    <link rel="stylesheet" href="./style/admin.css">
+    <link rel="stylesheet" href="./style/main.css">
+
+</head>
+<body>
+
+    <header>
+        <a class="add">Adicionar Sobremesa</a>
+    </header>
+
+
+    <main>
+        
+        <div class="select">
+            <button class="select_button">Pendente</button>
+            <p> | </p>
+            <button class="select_button">Fechados</button>
+        </div>
+
+        <div class="orders-list">
+
+            <!-- PENDENTE -->
+            <div class="order">
+                <div>
+                    <div class="informations">
+                        <h2>NOME PEDIDO</h2>
+                        <h3>R$00,00</h3>
+                    </div>
+                    <h2>NOME DO CLIENTE</h2>
+                </div>
+                <div>
+                    <button class="button_state">
+                        <img class="change_state" src="/img/icons/confirme.png" alt="confirmar">
+                    </button>
+                </div>
+            </div>
+            
+            
+            <!-- PAGO -->
+            <div class="order">
+                <div>
+                    <div class="informations">
+                        <h2>NOME PEDIDO</h2>
+                        <h3>R$00,00</h3>
+                    </div>
+                    <h2>NOME DO CLIENTE</h2>
+                </div>
+                <div>
+                    <button class="button_state">
+                        <img class="change_state" src="/img/icons/cancelar.png" alt="cancelar">
+                    </button>
+                </div>
+            </div>
+           
+        </div>
+
+
+
+    </main>
+
+
+    <footer>
+    </footer>
+    
+</body>
+</html>

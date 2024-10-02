@@ -7,7 +7,7 @@ const database = new sequelize (
     'programa',             //PASSWORDD
     {
         host: 'localhost',
-        port: 56604,
+        port: 58868,
         dialect: 'mssql'
     }
 );
