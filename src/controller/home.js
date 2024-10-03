@@ -10,18 +10,24 @@ module.exports = {
 
     async fazerPedido(req, res) {
         
-        const { id, qtd } = req.params;
+        const products = req.body.produtos
+        console.log(products)
 
-        const id_ = parseInt(id, 10);
-        const quantity = parseInt(qtd, 10);
+        if(products.length > 0){
 
+            
+            console.log("\n\n\nENTROU, PORRA")
+            products.forEach(async product => {
+                
+                await Product_order.create({ 
+                    fk_product: product.id,
+                    quantity: product.quantity
+                });
+            });
+        } else { console.log("ENTROU NAO")}
+            
 
-        console.log("ESSE ID AQUI:   " + id)
-
-        await Product_order.create({ 
-            fk_product: id_,
-            quantity: quantity
-        });
+        
 
 
     }

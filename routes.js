@@ -5,7 +5,7 @@ const config = require('./src/config/multer');
 
 const home = require('./src/controller/home');
 route.get('/', home.init);
-route.post('/fazerPedido/:id/:qtd', home.fazerPedido);
+route.post('/fazerPedido', home.fazerPedido);
 
 const admin = require('./src/controller/admin');
 route.get('/admin', admin.init)

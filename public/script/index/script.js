@@ -17,18 +17,27 @@ orders.forEach((order) => {
 
 const finish_button = document.getElementById('botao_finalishar')
 
-finish_button.addEventListener('click', () => {
+finish_button.addEventListener('click',async () => {
     let nome = document.getElementById('nome')
+    let produtos = []
+
     
     let orders = document.querySelectorAll('.order')
-    orders.forEach( async (order) => {
+    orders.forEach((order) => {
         let id = parseInt(order.querySelector('#id_product').innerHTML,10)
         let quantity = parseInt(order.querySelector('.quantity').innerHTML,10)
         
         if(quantity > 0){
-            console.log("id:" + id + "   quantity: " + quantity)
-            await fetch(`/fazerPedido/${id}/${quantity}`, {method: 'POST'})
+            produtos.push({"id": id, "quantity": quantity})
+            console.log(produtos)
         }
     })
 
+    await fetch('http://localhost:5000/fazerPedido', 
+        {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json' },
+            body: JSON.stringify({ produtos: produtos })
+        }
+    )
 })

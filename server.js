@@ -3,7 +3,10 @@ const express = require('express');     //Using express from node.js
 
 const app = express();                  //Instanting express into 'app' for configuration
 
+
+
 app.use(express.urlencoded({ extended: true }));    //Setting manipulated objects for complex level (if false only strings and arrays will be able)
+app.use(express.json());  //ARREGUEI
 
 app.use(express.static('public'));      //Setting that the 'public' folder is the main one
 
