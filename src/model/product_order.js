@@ -9,6 +9,10 @@ const product_order = database.define('product_order', {
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
+    },
+    quantity: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
     }
 });
 

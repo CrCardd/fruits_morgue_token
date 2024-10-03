@@ -122,7 +122,7 @@ body::before {
     justify-content: center;
 
     position: fixed;
-    bottom: 140px;
+    bottom: 50px;
 }
 
 .finish {
@@ -138,4 +138,41 @@ body::before {
     font-weight: 400;
     font-style: normal;
     color: rgb(190, 190, 190);
+}
+
+.por_nome {
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(155, 155, 155, 0.616);
+    width: 95%;
+    height: 60px;
+}
+
+.form_finish {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal_finish {
+    height: 200px;
+}
+
+.modal_botoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.butao {
+    width: 40%;
+    height: 50px;
+
+    background-color: rgba(233, 19, 233, 0.432);
+    border: none;
+    border-radius: 30px;
 }

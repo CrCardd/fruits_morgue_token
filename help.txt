@@ -1,1 +1,12 @@
 https://getbootstrap.com/docs/4.0/components/buttons/
+
+
+USE FruitsMorgue;
+
+SELECT * FROM product_orders
+SELECT * FROM Products
+SELECT * FROM Orders
+
+DROP TABLE Products;
+DROP TABLE Orders;
+DROP TABLE product_orders;

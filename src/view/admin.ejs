@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADM</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+
     <link rel="stylesheet" href="./style/admin.css">
     <link rel="stylesheet" href="./style/main.css">
-
 </head>
+
 <body>
 
     <header>
-        <a class="add">Adicionar Sobremesa</a>
+        <button class="add" type="button" data-toggle="modal" data-target="#criar_sobremesa">Adicionar Sobremesa</button>
     </header>
 
 
     <main>
-        
+
         <div class="select">
             <button class="select_button">Pendente</button>
             <p> | </p>
@@ -41,8 +45,8 @@
                     </button>
                 </div>
             </div>
-            
-            
+
+
             <!-- PAGO -->
             <div class="order">
                 <div>
@@ -58,7 +62,7 @@
                     </button>
                 </div>
             </div>
-           
+
         </div>
 
 
@@ -67,7 +71,39 @@
 
 
     <footer>
+        <!-- Modal -->
+        <div class="modal fade " id="criar_sobremesa" tabindex="-1" role="dialog"
+            aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body modal_criar_sobremesa">
+                        <form class="form_cadas" action="/create_sobremesa" method="post" >
+
+                            <div class="inputs_forms">
+                                <div>
+                                    <img id="imagem_sobremesa" class="imagem_sobremesa" src="/img/products/default_sobremesa.png" alt="">
+                                    <input id="input_imagem" type="file" accept="image/" name="foto">
+                                </div>
+                                <input class="input_cadas" placeholder="nome" type="text" name="nome">
+                                <input class="input_cadas" placeholder="preço" type="number" value="0" name="preco">
+                            </div>
+                            
+                            <div class="modal_botoes_finalizar">
+                                <button type="button" onclick="this.form.submit()" class="butao">CRIAR</button>
+                                <button type="button" class="butao" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    
+
+
+    <script src="/script/admin/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
+
 </html>

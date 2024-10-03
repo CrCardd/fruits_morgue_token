@@ -16,6 +16,10 @@ const Product = database.define('Product', {
     name: {
         primaryKey: true,
         type: Sequelize.STRING
+    },
+    photo: {
+        type: Sequelize.STRING,
+        allowNull: false
     }
 });
 
